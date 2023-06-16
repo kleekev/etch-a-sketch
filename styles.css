@@ -1,0 +1,23 @@
+body {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
+.header, .footer {
+    font-weight: bolder;
+    text-align: center;
+}
+.header {
+    font-size: 72px;
+    margin-bottom: 48px;
+    padding: 16px;
+}
+.footer {
+    font-size: 18px;
+    margin-top: auto;
+    padding: 12px;
+}
