@@ -11,11 +11,11 @@ body {
 }
 .middle {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
     max-width: 1100px;
     margin: 0 auto;
-    gap: 48px;
 }
 .panel {
     display:flex;
