@@ -4,7 +4,6 @@ function addHoverFunction() {
     [...grid].forEach(function(item) {
         item.addEventListener('mouseover', () => {
             item.style.backgroundColor = 'black';
-            console.log(item)
         });
     });
 }
@@ -28,7 +27,7 @@ let gridSize = 16;
 addGridSquares(gridSize, container);
 addHoverFunction();
 
-// Button Functionality
+// Size Button Functionality
 const button = document.querySelector('.size');
 button.addEventListener('click', () => {
     gridSize = Number(prompt("Enter Grid Size"));
@@ -42,6 +41,14 @@ button.addEventListener('click', () => {
     addHoverFunction();
 })
 
+//Clear Button Functionality
+const clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', () => {
+    const grid = document.querySelectorAll('#square');
+    [...grid].forEach(function(item) {
+        item.style.backgroundColor = 'white';
+    });
+})
 
 
 
